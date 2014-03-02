@@ -110,7 +110,7 @@ func pm(input []byte) []byte {
 			new_i := i + 1 // skip current 'm' byte
 			end := new_i - code_len(code)
 
-			result = append(result, append(input[ index : end], code_div(code)...)...)
+			result = append(result, append(input[index:end], code_div(code)...)...)
 			index = new_i
 		}
 	}
@@ -120,12 +120,12 @@ func pm(input []byte) []byte {
 	return result
 }
 
-func main() {/*
-	pm(cyan)
-	pm(green)
-	pm(white_0)
-	pm(white_1)
-	pm(grey)*/
+func main() { /*
+		pm(cyan)
+		pm(green)
+		pm(white_0)
+		pm(white_1)
+		pm(grey)*/
 
 	// start and end with a div
 	// pm("<div>Welcome to " + cyan + " the server " + green + " today!</div>")
